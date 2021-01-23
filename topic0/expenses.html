@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Expenses Tables</title>
+        <style>
+            table{
+                border-collapse: separate;
+                border-spacing: 0 15px;
+            }
+            th{
+                background-color:lightsteelblue;
+                color:black;
+            }
+            th,
+            td{
+                width: 150px;
+                text-align: center;
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>      
+    <body>
+        <h1>Expenses (1)</h1>
+        <table summary="These are my expenses from 2021">
+            <caption>Expenses from 2021!</caption>
+        <thead>
+            <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Company</th>
+                <th scope="col">Date</th>
+                <th scope="col">Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Graphics Card GTX 1650</td>
+                <td>Gigabyte</td>
+                <td>January 13</td>
+                <td>$22.800<small><small>00</small></small></td>
+            </tr>
+            <tr>
+                <td>Power Supply 700w Plus</td>
+                <td>Thermaltake</td>
+                <td>January 14</td>
+                <td>$13.100<small><small>00</small></small></td>
+            </tr>
+            <tr>
+                <td>Solid Disk 480gb A400</td>
+                <td>Kingston</td>
+                <td>January 5</td>
+                <td>$5.599<small><small>99</small></small></td>
+            </tr>
+        </tbody>
+        </table>
+
+        <h1>Expenses (2)</h1>
+        <table summary="These are the same expenses from before, but in a different table">
+            <tbody>
+                <tr>
+                    <th>Product</th>
+                    <td>Graphics Card GTX 1650</td>
+                    <td>Power Supply 700w Plus</td>
+                    <td>Solid Disk 480gb A400</td>
+                </tr>
+                <tr>
+                    <th>Company</th>
+                    <td>Thermaltake</td>
+                    <td>Gigabyte</td>
+                    <td>Kingston</td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <td>January 13</td>
+                    <td>January 14</td>
+                    <td>January 5</td>
+                </tr>
+                <tr>
+                    <th>Cost</th>
+                    <td>$22.800<small><small>00</small></small></td>
+                    <td>$13.100<small><small>00</small></small></td>
+                    <td>$5.599<small><small>99</small></small></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
