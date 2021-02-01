@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang=en>
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="SignUp">
+    <meta name="keywords" content="signup, register, commit, login">
+    <meta name="author" content="Pedraza Federico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
 
     <style>
-        #userSignUp fieldset 
-        {
-            width: 60;
-        }
 
         #userSignUp li 
         {
             margin: 10px;
             list-style: none;
-        }
-
-        #userSignUp textarea 
-        {
-            margin-left: 10px;
         }
     </style>
 
@@ -41,14 +35,16 @@
                     <label for="email"><b>Email:</b></label> <input type="email" name="email" id="email" value="" required=""/>
                 </li>
                 <li>
-                    <label for="age"><b>Birthday:</b></label> <input type="date" name="birthday" id="birthday" value=""/>
+                    <label for="birthday"><b>Birthday:</b></label> <input type="date" name="birthday" id="birthday" value=""/>
                 </li>
                 <li>
                     <label for="bio"><b>Biography:</b></label>
                 </li>
-                <textarea name="biography" id="bio" cols="25" rows="5" placeholder="Tell us something about you..."></textarea>
                 <li>
-                    <label for="fSport">Favorite sport:</label>
+                    <textarea name="biography" id="bio" cols="25" rows="5" placeholder="Tell us something about you..."></textarea>
+                </li>
+                <li>
+                    <label>Favorite sport:</label>
                     <select name="fSport" id="fSport">
                         <option value="">Select a sport</option>
                         <option value="soccer">Soccer</option>

@@ -1,0 +1,78 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cornsilk;
+}
+
+.grid {
+    width: 150%;
+    height: 100%;
+
+    display: grid;
+
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30% 70%;
+    
+    box-sizing: border-box;
+}
+
+.c-header {
+    display:flex;
+    border-bottom: 5px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 140%;
+}
+
+.c-description {
+    border-bottom: 5px solid black;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.c-subheader {
+    grid-column: 1;
+    grid-row: 2;
+
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-body {
+    font-size: 24px;
+}
+
+.c-images {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 30px;
+}
+
+.recipe {
+    display: none;
+    color:red;
+}
+
+.c-image {
+    display:inline;
+    position:relative;
+}
+
+.c-image:hover img {
+    opacity: 0.5;
+}
+
+.c-image:hover .recipe {
+    display: inline;
+    position:absolute;
+    bottom: 15rem;
+    left: 2.5rem;
+}

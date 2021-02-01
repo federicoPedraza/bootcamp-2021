@@ -1,0 +1,109 @@
+html {
+  font-family: 'Quicksand', sans-serif;
+  background-color:cornsilk;
+}
+
+.grid {
+  width: 100vw;
+  height: 100vh;
+  
+  display: grid;
+  
+  position: fixed;
+
+  grid-template-columns: 12% 68% 20%;
+  grid-template-rows: 12.5% 77.5% 10%;
+  padding: 5px;
+  gap:10px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  color: white;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: black;
+
+  font-size: 46px;
+
+  margin: 15px;
+  text-align: center;
+}
+
+.navigation {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  
+  border: 2.5px solid black;
+ 
+  color:white;
+  font-size: 12px;
+  padding: 10px;
+}
+.navigation ul {
+  padding: 0px;
+  margin: 0px;
+}
+.navigation li {
+  list-style: none;
+  padding: 10px;
+}
+
+.content {
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  font-size: 14px;
+
+  text-align: center;
+  padding: 10px;
+}
+
+
+.footer {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+
+  color:white;
+  text-align: center;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.sidebar {
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  border: 2.5px solid black;
+
+  color:white;
+  font-size: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.sidebar h1 {
+  text-align: center;
+}
+
+[class$="r"] {
+  background-color: magenta;
+}
+
+[class*="a"]:not([class$="r"]) {
+  background-color: blue;
+}
+
+
+
+/*
+2.3 point 6: adding font-weight: 700 (or more) to my global font definition
+2.3 point 7:
+
+.oh-no-inline-styles {
+  background-color: green;
+}
+*/
