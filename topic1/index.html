@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>Random</title>
         <link href="stylesheets/styleCenter.css" rel="stylesheet">
+        <script src="practice.js"></script>
     </head>
-    <script src="fadeIn.js"></script>
     <body>
-        <h1>Random Content</h1>
-        <section onload="fadeIn()" id="hidden-section">Hello World</section>
-        
+        <button onclick="getFetchViaAJAXCall('http://api.icndb.com/jokes/random')">AJAX!</button>
+        <button id="fetchUserData" onclick="GetFetch()">Give me a Joke!</button>
+        <h2 id='heading'>Joke</h2>
+        <section onload="FadeIn()" id="hidden-section"></section>
+        <h1>Repositories:</h1>
+        <input type="text" id='searchValue' placeholder='Search'>
+        <input onclick='' type="submit" value='Search'>
+        <ul onload='getFetchWithParameters("asd")' id='repositoriesList'>
+            
+        </ul>
     </body>
 </html>
